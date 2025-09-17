@@ -7,6 +7,8 @@ A high-performance TypeScript Vector Database with LSM storage and KD-tree index
 
 ## RAM Usage Logging
 
+The following graph is for RAM usage in MBs while inserting 1 million 2D vectors.
+
 ![RAM Usage](./assets/ram.jpg)
 
 ## Features
