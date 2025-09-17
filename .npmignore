@@ -1,0 +1,36 @@
+# Source files
+src/
+index.ts
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+
+# Development files
+*.log
+*.csv
+Log.csv
+bun.lock
+
+# Build files
+node_modules/
+.bun/
+
+# Data and demo files
+data/
+*.test.*
+*.spec.*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore

@@ -1,10 +1,52 @@
 {
   "name": "qd-vectordb",
-  "module": "index.ts",
+  "version": "1.0.0",
+  "description": "A high-performance TypeScript Vector Database with LSM storage and KD-tree indexing",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
-  "private": true,
+  "private": false,
+  "keywords": [
+    "vector",
+    "database",
+    "similarity-search",
+    "machine-learning",
+    "typescript",
+    "lsm",
+    "kdtree"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pallavsharma505/QDVectorDB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pallavsharma505/QDVectorDB/issues"
+  },
+  "homepage": "https://github.com/pallavsharma505/QDVectorDB#readme",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsup",
+    "build:types": "tsc --project tsconfig.build.json --emitDeclarationOnly",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build",
+    "demo": "bun run index.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/node": "^24.5.1",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "typescript": "^5"
