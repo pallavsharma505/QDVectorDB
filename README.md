@@ -5,6 +5,10 @@ A high-performance TypeScript Vector Database with LSM storage and KD-tree index
 [![npm version](https://badge.fury.io/js/qd-vectordb.svg)](https://badge.fury.io/js/qd-vectordb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## RAM Usage Logging
+
+![RAM Usage](./assets/ram.jpg)
+
 ## Features
 
 - **High Performance**: LSM-tree storage design for fast writes and efficient reads
